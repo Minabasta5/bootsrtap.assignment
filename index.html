@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" >
+</head>
+<body >
+    <div class="container">
+    <!-- here i used bootstrao classes to choose the light color for the background -->
+    <nav class="navbar navbar-expand-sm navbar-primary bg-info">
+        <a class="navbar-brand" href="index.html">Egypt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown
+        " aria-controle="navbarNavDropdown" aria-expanded="false" 
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+        </span></button>
+        <!-- the links of the navbar -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact us</a>
+                </li>
+                <!-- here in the dropdown menu i should you the javescript to make it working -->
+                <li class="nav-item dropdown">
+                    <a  class="nav-link  dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">menu</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="#">cairo</a> 
+                       <a class="dropdown-item" href="#">sharm  Elshiesk</a> 
+                       <a class="dropdown-item" href="#">hurghada</a> 
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- for all the table i gived  info color expect the head -->
+    <table class="table table-info" >
+        <caption  class="caption caption-top"  class="fs-4"><p class="text-center " class="fs-3" class="bg-info" >personal Data</p></caption>
+
+        <thead>
+            <tr  class="table-danger ">
+                <th>name</th>
+                <th>age</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mina</td>
+                <td>lavinia</td>
+                <td>veronia</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>45</td>
+                <td>33</td>
+            </tr>
+        
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>45654</td>
+                <td>67575</td>
+                <td>4564576</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<form   class="row g-4 "  action="get">
+       <div class="col-auto">
+        <label for="em" class="col-form-label">email</label>
+       </div>
+       <div>
+        <input type="email" id="em" placeholder="Email" class="form-control">
+
+       </div>
+    <div class="col-auto">
+        <label for="pass"  class="col-form-label">password</label>
+
+    </div>
+    <div class="col-auto">
+        <input  id="pass" type="password" placeholder="your password" class="form-control " aria-describedby="paswwordHelpinline">
+
+    </div>
+    <!-- the condtionds of the password -->
+    <div class="col-auto">
+        <span id="paswwordHelpinline" class="form-text">must be long 8-20 charter</span>
+    </div>
+
+</form>
+<!-- here i put a small margin top for the submit button plus the color -->
+<button type="submit"  value="submit" class="btn btn-primary mt-3" >submit</button>
+
+<SCRIPT src="node_modules/jquery/dist/jquery.js"></SCRIPT>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
