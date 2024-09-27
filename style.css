@@ -1,0 +1,8 @@
+.cap{
+    color: rgb(142, 127, 255);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
